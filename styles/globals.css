@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  /* padding-left: 0.5rem;
+  padding-right: 0.5rem; */
+  background-color: #ffffff;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-open-sans {
+  font-family: 'Munito', sans-serif;
+}
+
+.font-nunito {
+  font-family: 'Nunito', sans-serif;
+}
+
+@layer components {
+  .social-icon {
+    @apply text-white hover:p-1 transition-all ease-in-out duration-500 rounded-full hover:bg-white hover:cursor-pointer;
+  }
+}
+
+::-webkit-calendar-picker-indicator {
+  filter: invert(100%) brightness(50%) sepia(100%) saturate(10000%)
+    hue-rotate(260deg);
+}
+
+.custom-shape-divider-top-1640545095 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1640545095 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 119px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1640545095 .shape-fill {
+  fill: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .custom-shape-divider-top-1640545095 svg {
+    width: calc(100% + 1.3px);
+    height: 69px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.drawer-toggle:checked ~ .drawer-side > .drawer-overlay {
+  opacity: 0.9 !important;
+}
+
+.table thead tr th {
+  background-color: #4f46e5 !important;
+  color: white !important;
+}
+
+.table tbody tr th,
+td {
+  color: rgb(80, 79, 79) !important;
+  font-weight: 500;
+}
+
+/*
+  Set the color of the icon
+*/
+.loader svg path,
+svg rect {
+  fill: rgb(79 70 229);
+}
